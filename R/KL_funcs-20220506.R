@@ -108,7 +108,7 @@ LDW_meta <- function(X_1, X_2, y_1, y_2, lambda_seq, family){
     estimate <- 
       optim(par=hat_beta_2, fn=binom_min_func, gr=binom_min_func_deriv,
             hat_beta_1=hat_beta_1, X_1=X_1, X_2=X_2, Z_2=Z_2, y_1=y_1, y_2=y_2, 
-            hat_eta_1=hat_eta_1, hat_mu_1=hat_mu_1, n_1=n_1, n_2=n_2, lambda_opt=lambda_opt, method="BFGS")$par
+            hat_eta_1=hat_eta_1, hat_mu_1=hat_mu_1, n_1=n_1, n_2=n_2, lambda=lambda_opt, method="BFGS")$par
     S <- v2 + lambda_opt*v1
     S_inv <- solve(S)
     J_inv <- solve(S%*%v2_inv%*%S)
