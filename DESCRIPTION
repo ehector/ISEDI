@@ -1,0 +1,14 @@
+Package: LDWTL
+Type: Package
+Title: Likelihood-distance weighted transfer learning
+Version: 1.0-1
+Date: 2022-04-13
+Author: Emily C. Hector
+Maintainer: [Emily C. Hector] <ehector@ncsu.edu>
+Description: Estimates the parameters of a generalized linear model in a dataset by borrowing information from a prior analysis on another dataset.
+License: GPL-3
+Imports: Rcpp (>= 0.12.11),
+         Matrix (>= 1.2.11),
+         stats
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: GNU make
