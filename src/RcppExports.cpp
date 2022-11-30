@@ -13,7 +13,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // matrix_inv
 arma::mat matrix_inv(const arma::mat& X);
-RcppExport SEXP _LDWTL_matrix_inv(SEXP XSEXP) {
+RcppExport SEXP _ISEDI_matrix_inv(SEXP XSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -24,7 +24,7 @@ END_RCPP
 }
 // binom_ll_2
 double binom_ll_2(const arma::vec& par, const arma::vec& y_2, const arma::mat& X_2, const arma::vec& Z_2);
-RcppExport SEXP _LDWTL_binom_ll_2(SEXP parSEXP, SEXP y_2SEXP, SEXP X_2SEXP, SEXP Z_2SEXP) {
+RcppExport SEXP _ISEDI_binom_ll_2(SEXP parSEXP, SEXP y_2SEXP, SEXP X_2SEXP, SEXP Z_2SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -38,7 +38,7 @@ END_RCPP
 }
 // binom_ll_2_deriv
 arma::vec binom_ll_2_deriv(const arma::vec& par, const arma::vec& y_2, const arma::mat& X_2, const arma::vec& Z_2);
-RcppExport SEXP _LDWTL_binom_ll_2_deriv(SEXP parSEXP, SEXP y_2SEXP, SEXP X_2SEXP, SEXP Z_2SEXP) {
+RcppExport SEXP _ISEDI_binom_ll_2_deriv(SEXP parSEXP, SEXP y_2SEXP, SEXP X_2SEXP, SEXP Z_2SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -52,7 +52,7 @@ END_RCPP
 }
 // binom_KLdiv
 double binom_KLdiv(const arma::vec& par, const arma::vec& hat_beta_1, const arma::vec& y_1, const arma::mat& X_1, const arma::vec& hat_eta_1, const arma::vec& hat_mu_1);
-RcppExport SEXP _LDWTL_binom_KLdiv(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP y_1SEXP, SEXP X_1SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP) {
+RcppExport SEXP _ISEDI_binom_KLdiv(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP y_1SEXP, SEXP X_1SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -68,7 +68,7 @@ END_RCPP
 }
 // binom_KLdiv_deriv
 arma::vec binom_KLdiv_deriv(const arma::vec& par, const arma::vec& hat_beta_1, const arma::vec& y_1, const arma::mat& X_1, const arma::vec& hat_eta_1, const arma::vec& hat_mu_1);
-RcppExport SEXP _LDWTL_binom_KLdiv_deriv(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP y_1SEXP, SEXP X_1SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP) {
+RcppExport SEXP _ISEDI_binom_KLdiv_deriv(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP y_1SEXP, SEXP X_1SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -84,7 +84,7 @@ END_RCPP
 }
 // binom_min_func
 double binom_min_func(const arma::vec& par, const arma::vec& hat_beta_1, const arma::mat& X_1, const arma::mat& X_2, const arma::vec& y_1, const arma::vec& y_2, const arma::vec& Z_2, const arma::vec& hat_eta_1, const arma::vec& hat_mu_1, const int& n_1, const int& n_2, const double& lambda);
-RcppExport SEXP _LDWTL_binom_min_func(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP X_1SEXP, SEXP X_2SEXP, SEXP y_1SEXP, SEXP y_2SEXP, SEXP Z_2SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP, SEXP n_1SEXP, SEXP n_2SEXP, SEXP lambdaSEXP) {
+RcppExport SEXP _ISEDI_binom_min_func(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP X_1SEXP, SEXP X_2SEXP, SEXP y_1SEXP, SEXP y_2SEXP, SEXP Z_2SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP, SEXP n_1SEXP, SEXP n_2SEXP, SEXP lambdaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -106,7 +106,7 @@ END_RCPP
 }
 // binom_min_func_deriv
 arma::vec binom_min_func_deriv(const arma::vec& par, const arma::vec& hat_beta_1, const arma::mat& X_1, const arma::mat& X_2, const arma::vec& y_1, const arma::vec& y_2, const arma::vec& Z_2, const arma::vec& hat_eta_1, const arma::vec& hat_mu_1, const int& n_1, const int& n_2, const double& lambda);
-RcppExport SEXP _LDWTL_binom_min_func_deriv(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP X_1SEXP, SEXP X_2SEXP, SEXP y_1SEXP, SEXP y_2SEXP, SEXP Z_2SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP, SEXP n_1SEXP, SEXP n_2SEXP, SEXP lambdaSEXP) {
+RcppExport SEXP _ISEDI_binom_min_func_deriv(SEXP parSEXP, SEXP hat_beta_1SEXP, SEXP X_1SEXP, SEXP X_2SEXP, SEXP y_1SEXP, SEXP y_2SEXP, SEXP Z_2SEXP, SEXP hat_eta_1SEXP, SEXP hat_mu_1SEXP, SEXP n_1SEXP, SEXP n_2SEXP, SEXP lambdaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -128,17 +128,17 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_LDWTL_matrix_inv", (DL_FUNC) &_LDWTL_matrix_inv, 1},
-    {"_LDWTL_binom_ll_2", (DL_FUNC) &_LDWTL_binom_ll_2, 4},
-    {"_LDWTL_binom_ll_2_deriv", (DL_FUNC) &_LDWTL_binom_ll_2_deriv, 4},
-    {"_LDWTL_binom_KLdiv", (DL_FUNC) &_LDWTL_binom_KLdiv, 6},
-    {"_LDWTL_binom_KLdiv_deriv", (DL_FUNC) &_LDWTL_binom_KLdiv_deriv, 6},
-    {"_LDWTL_binom_min_func", (DL_FUNC) &_LDWTL_binom_min_func, 12},
-    {"_LDWTL_binom_min_func_deriv", (DL_FUNC) &_LDWTL_binom_min_func_deriv, 12},
+    {"_ISEDI_matrix_inv", (DL_FUNC) &_ISEDI_matrix_inv, 1},
+    {"_ISEDI_binom_ll_2", (DL_FUNC) &_ISEDI_binom_ll_2, 4},
+    {"_ISEDI_binom_ll_2_deriv", (DL_FUNC) &_ISEDI_binom_ll_2_deriv, 4},
+    {"_ISEDI_binom_KLdiv", (DL_FUNC) &_ISEDI_binom_KLdiv, 6},
+    {"_ISEDI_binom_KLdiv_deriv", (DL_FUNC) &_ISEDI_binom_KLdiv_deriv, 6},
+    {"_ISEDI_binom_min_func", (DL_FUNC) &_ISEDI_binom_min_func, 12},
+    {"_ISEDI_binom_min_func_deriv", (DL_FUNC) &_ISEDI_binom_min_func_deriv, 12},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_LDWTL(DllInfo *dll) {
+RcppExport void R_init_ISEDI(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
