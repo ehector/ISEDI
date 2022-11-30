@@ -1,7 +1,7 @@
 # ISEDI
 Information Sharing for Efficient Data Integration
 
-This is a repository for the R package to estimate the parameters of a generalized linear model in a dataset by borrowing information from a prior analysis on another dataset.. The R package's main files are:
+This is a repository for the R package to estimate the parameters of a generalized linear model in a dataset by borrowing information from a prior analysis on another dataset. The R package's main files are:
 - src/KL_funcs.cpp: this file defines the Rcpp functions that compute the likelihoods, KL divergences and their derivatives for the logistic regression model.
 - R/KL_funcs.R: this file defines the R function for the ISE estimation of model parameters, as well as functions to compute the mean squared error.
 
