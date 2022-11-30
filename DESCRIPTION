@@ -1,6 +1,6 @@
-Package: LDWTL
+Package: ISEDI
 Type: Package
-Title: Likelihood-distance weighted transfer learning
+Title: Information Sharing for Efficient Data Integration
 Version: 1.0-1
 Date: 2022-04-13
 Author: Emily C. Hector
