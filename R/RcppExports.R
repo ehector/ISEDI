@@ -2,30 +2,30 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 matrix_inv <- function(X) {
-    .Call(`_LDWTL_matrix_inv`, X)
+    .Call(`_ISEDI_matrix_inv`, X)
 }
 
 binom_ll_2 <- function(par, y_2, X_2, Z_2) {
-    .Call(`_LDWTL_binom_ll_2`, par, y_2, X_2, Z_2)
+    .Call(`_ISEDI_binom_ll_2`, par, y_2, X_2, Z_2)
 }
 
 binom_ll_2_deriv <- function(par, y_2, X_2, Z_2) {
-    .Call(`_LDWTL_binom_ll_2_deriv`, par, y_2, X_2, Z_2)
+    .Call(`_ISEDI_binom_ll_2_deriv`, par, y_2, X_2, Z_2)
 }
 
 binom_KLdiv <- function(par, hat_beta_1, y_1, X_1, hat_eta_1, hat_mu_1) {
-    .Call(`_LDWTL_binom_KLdiv`, par, hat_beta_1, y_1, X_1, hat_eta_1, hat_mu_1)
+    .Call(`_ISEDI_binom_KLdiv`, par, hat_beta_1, y_1, X_1, hat_eta_1, hat_mu_1)
 }
 
 binom_KLdiv_deriv <- function(par, hat_beta_1, y_1, X_1, hat_eta_1, hat_mu_1) {
-    .Call(`_LDWTL_binom_KLdiv_deriv`, par, hat_beta_1, y_1, X_1, hat_eta_1, hat_mu_1)
+    .Call(`_ISEDI_binom_KLdiv_deriv`, par, hat_beta_1, y_1, X_1, hat_eta_1, hat_mu_1)
 }
 
 binom_min_func <- function(par, hat_beta_1, X_1, X_2, y_1, y_2, Z_2, hat_eta_1, hat_mu_1, n_1, n_2, lambda) {
-    .Call(`_LDWTL_binom_min_func`, par, hat_beta_1, X_1, X_2, y_1, y_2, Z_2, hat_eta_1, hat_mu_1, n_1, n_2, lambda)
+    .Call(`_ISEDI_binom_min_func`, par, hat_beta_1, X_1, X_2, y_1, y_2, Z_2, hat_eta_1, hat_mu_1, n_1, n_2, lambda)
 }
 
 binom_min_func_deriv <- function(par, hat_beta_1, X_1, X_2, y_1, y_2, Z_2, hat_eta_1, hat_mu_1, n_1, n_2, lambda) {
-    .Call(`_LDWTL_binom_min_func_deriv`, par, hat_beta_1, X_1, X_2, y_1, y_2, Z_2, hat_eta_1, hat_mu_1, n_1, n_2, lambda)
+    .Call(`_ISEDI_binom_min_func_deriv`, par, hat_beta_1, X_1, X_2, y_1, y_2, Z_2, hat_eta_1, hat_mu_1, n_1, n_2, lambda)
 }
 
